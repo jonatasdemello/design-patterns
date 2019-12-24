@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DesignPatterns.Creational
 {
-    //The Abstract Factory Pattern is a Creational pattern in which interfaces are defined for creating 
+    //The Abstract Factory Pattern is a Creational pattern in which interfaces are defined for creating
     // families of related objects without specifying their actual implementations.
-    // Abstract Factory allows us to generically define families of related objects, 
+    // Abstract Factory allows us to generically define families of related objects,
     // leaving the actual concretions for those objects to be implemented as needed.
 
     abstract class SandwichA { }
@@ -23,10 +23,8 @@ namespace DesignPatterns.Creational
     // A ConcreteProduct
     class BLT : SandwichA { }
     class CremeBrulee : DessertA { }
-
     class GrilledCheese : SandwichA { }
     class IceCreamSundae : DessertA { }
-
 
     // A ConcreteFactory which creates concrete objects by implementing the abstract factory's methods.
     class AdultCuisineFactory : RecipeFactory

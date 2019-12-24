@@ -162,7 +162,7 @@ namespace DesignPatterns.Creational
         public void TestMain()
         {
             CardFactory factory = null;
-            
+
             string car = "moneyback";
 
             switch (car.ToLower())
@@ -181,7 +181,7 @@ namespace DesignPatterns.Creational
             }
 
             CreditCard creditCard = factory.GetCreditCard();
-            
+
             Console.WriteLine("Card Type: {0}\nCredit Limit: {1}\nAnnual Charge: {2}",
                 creditCard.CardType, creditCard.CreditLimit, creditCard.AnnualCharge);
         }
